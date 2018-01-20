@@ -12,6 +12,7 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
 
     LinkedList<Assignment> assignmentList = new LinkedList<Assignment>();
+    LinkedList<Classes> classList = new LinkedList<Classes>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,14 +7,14 @@ import java.util.LinkedList;
  */
 
 public class Classes {
-    public LinkedList<Assignment> assignments;
+    public LinkedList<AssignmentType> assignments;
     public int colorAssigns;
     public String classNames;
     public String days;
     public int startTime;
     public int endTime;
 
-    public Classes(Assignment assignment, int color, String name, String day, int start, int end) {
+    public Classes(AssignmentType assignment, int color, String name, String day, int start, int end) {
         this.assignments.add(assignment);
         this.colorAssigns = color;
         this.classNames = name;

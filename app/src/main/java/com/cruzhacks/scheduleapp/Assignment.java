@@ -13,12 +13,13 @@ public class Assignment {
     public int years;
     public boolean complete;
 
-    public Assignment (String name, int month, int day, int year, boolean done) {
+
+    public Assignment (String name, int month, int day, int year, boolean completed) {
         this.names = name;
         this.months = month;
         this.days = day;
         this.years = year;
-        this.complete = done;
+        this.complete = completed;
     }
 }
 
