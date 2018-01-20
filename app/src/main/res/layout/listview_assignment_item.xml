@@ -8,6 +8,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/assignment_main_layout"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,10 +19,60 @@
         <RelativeLayout
             android:id="@+id/assignment_content_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/assignment_done_check_box">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/assignment_layout_class_color"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_dark">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/assignment_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/assignment_layout_class_color">
+
+                <TextView
+                    android:id="@+id/assignment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:hint="Assignment name" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/assignment_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/assignment_title_layout">
+                <TextView
+                    android:id="@+id/assignment_due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/assignment_date_due"
+                    android:text="Due:" />
+
+                <TextView
+                    android:id="@+id/assignment_date_due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:hint="MM/DD/YY"/>
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
 
+        <CheckBox
+            android:id="@+id/assignment_done_check_box"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
