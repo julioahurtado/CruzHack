@@ -30,25 +30,25 @@ public class Assignment {
     //***********************************************
     public boolean changeComplete(boolean due_complete)
     {
-        this.due_complete=due_complete;
+        this.due_complete = due_complete;
         return this.due_complete;
     }
 
     public int changeMonth(int due_months)
     {
-        this.due_months=due_months;
+        this.due_months = due_months;
         return this.due_months;
     }
 
     public int changeDay(int due_days)
     {
-        this.due_days=due_days;
+        this.due_days = due_days;
         return this.due_days;
     }
 
     public int changeYear(int due_years)
     {
-        this.due_years=due_years;
+        this.due_years = due_years;
         return this.due_years;
     }
 
