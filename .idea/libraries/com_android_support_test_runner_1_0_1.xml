@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.android.support.test:runner-1.0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/b51f32aa7b3e1dfa2f199f0c82f3c9be/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/b51f32aa7b3e1dfa2f199f0c82f3c9be/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/56c752bfe71abeaff188c1b2bfabc012/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/56c752bfe71abeaff188c1b2bfabc012/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
