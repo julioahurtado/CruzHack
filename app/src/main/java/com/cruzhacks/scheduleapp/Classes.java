@@ -44,6 +44,28 @@ public class Classes {
         this.days = day;
     }
 
+    public void addAssignment(Assignment assignment) {
+        this.assignments.add(assignment);
+    }
 
+    public void changeName(String name) {
+        this.classNames = name;
+    }
+
+    public String returnName() {
+        return this.classNames;
+    }
+
+    public String returnDays() {
+        return this.days;
+    }
+
+    public int returnColor() {
+        return this.colorAssigns;
+    }
+
+    public String returnTime() {
+        return (this.startTimeHour + ":" + this.startTimeMin + "-" + this.endTimeHour + ":" + this.endTimeMin);
+    }
 
 }
