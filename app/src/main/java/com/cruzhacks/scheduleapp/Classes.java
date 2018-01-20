@@ -28,6 +28,22 @@ public class Classes {
         this.endTimeMin = endMin;
     }
 
+    public void changeTime(int startHour, int startMin, int endHour, int endMin) {
+        this.startTimeHour = startHour;
+        this.startTimeMin = startMin;
+        this.endTimeHour = endHour;
+        this.endTimeMin = endMin;
+    }
+
+    public void changeColor(int color) {
+        this.colorAssigns = color;
+
+    }
+
+    public void changeDay(String day) {
+        this.days = day;
+    }
+
 
 
 }
