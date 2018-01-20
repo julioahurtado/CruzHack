@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/assignment_whole_item_layout"
+        android:id="@+id/class_whole_item_layout"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         </android.support.constraint.ConstraintLayout>
 
         <RelativeLayout
-            android:id="@+id/assignment_data_layout"
+            android:id="@+id/class_data_layout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/class_color">
@@ -34,18 +34,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/class_name"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:hint="Class"/>
+                    android:layout_marginLeft="2dp"
+                    android:hint="Class" />
             </LinearLayout>
 
             <RelativeLayout
-                android:id="@+id/assignment_info_layout"
+                android:id="@+id/class_info_layout"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:layout_below="@id/assignment_title_layout">
 
                 <TextView
