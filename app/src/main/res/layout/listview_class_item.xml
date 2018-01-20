@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/class_color"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/class_color">
+
+            <LinearLayout
+                android:id="@+id/class_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Class"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/class_info_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/class_title_layout">
+
+                <TextView
+                    android:id="@+id/class_day_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/class_meet_times"
+                    android:hint="MWF" />
+
+                <TextView
+                    android:id="@+id/class_meet_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:hint="4:00-5:00" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
