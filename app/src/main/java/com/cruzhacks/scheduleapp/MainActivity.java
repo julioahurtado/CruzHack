@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // Realm Config
+        // Realm Configuration
         super.onCreate(savedInstanceState);
         Realm.init(this);
         RealmConfiguration realmConfig = new RealmConfiguration.Builder()
-                .name("tasky.realm")
+                .name("myrealm.realm")
                 .schemaVersion(0)
                 .build();
         Realm.setDefaultConfiguration(realmConfig);
