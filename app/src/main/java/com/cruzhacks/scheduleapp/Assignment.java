@@ -1,11 +1,14 @@
 package com.cruzhacks.scheduleapp;
+import java.util.Date;
 /**
  * Created by cante on 1/20/2018.
  */
 
+//TODO: Finish Assignment constructor creating a date created var
 
+public class Assignment
+{
 
-public class Assignment {
     private String due_names;//the name/description of the assignment
     private int due_months;//month its due
     private int due_days;//day its due
@@ -18,12 +21,17 @@ public class Assignment {
     //***********************************************
     public Assignment (String due_name, int due_month, int due_day, int due_year, boolean due_completed)
     {
+        Date date_made = new Date();
+
+
+
         this.due_names = due_name;
         this.due_months = due_month;
         this.due_days = due_day;
         this.due_years = due_year;
         this.due_complete = due_completed;
     }
+
     //***********************************************
     //This will change the variable to the given
     //value
