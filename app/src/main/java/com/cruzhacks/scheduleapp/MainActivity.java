@@ -18,6 +18,7 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    Context appContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
